@@ -3,14 +3,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $autoload['packages'] = [];
 
-$autoload['libraries'] = [];
+$autoload['libraries'] = [
+	'database',
+	'form_validation',
+	'session'
+];
 
 $autoload['drivers'] = [];
 
-$autoload['helper'] = [];
+$autoload['helper'] = [
+	'application_helper',
+	'form',
+	'url'
+];
 
 $autoload['config'] = [];
 
 $autoload['language'] = [];
 
-$autoload['model'] = [];
+$autoload['model'] = [
+	'ArticleGroupModel',
+	'ArticleModel',
+	'CartElementModel',
+	'CartModel',
+	'DealerGroupModel',
+	'GroupModel',
+	'OrderElementModel',
+	'OrderModel',
+	'UserDealerGroupAssociationModel',
+	'UserGroupAssociationModel',
+	'UserModel'
+];
